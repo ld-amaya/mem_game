@@ -59,9 +59,9 @@ function setGame(){
     card.innerHTML='';
     for (let i = 0;i<numCards;i++){
         let myDiv = document.createElement('div');
-        if (numCards===4)  { myDiv.classList.toggle('cardEasy');}
-        if (numCards===10) { myDiv.classList.toggle('cardMedium');}
-        if (numCards===20) { myDiv.classList.toggle('cardDifficult');}
+        if (numCards===10)  { myDiv.classList.toggle('cardEasy');}
+        if (numCards===20) { myDiv.classList.toggle('cardMedium');}
+        if (numCards===40) { myDiv.classList.toggle('cardDifficult');}
         myDiv.classList.toggle('card');
         myDiv.id = `card${i+1}`;
         myDiv.dataset.id = i;
@@ -120,9 +120,9 @@ function cardCompare(){
         score.textContent = totalScore; //display score to user
         scoreCounter = 10; //reset score counter
         cardCounter +=2;
-        if (numCards === 4 && cardCounter === numCards) gameDone();
         if (numCards === 10 && cardCounter === numCards) gameDone();
-        if (numCards === 20 && cardCounter === numCards) gameDone(); 
+        if (numCards === 20 && cardCounter === numCards) gameDone();
+        if (numCards === 40 && cardCounter === numCards) gameDone(); 
     
     } else {
         //hide cards after 1sec if card does not  match
