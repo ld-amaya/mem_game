@@ -1,0 +1,86 @@
+h2{
+    text-align: center;
+}
+.myBody{
+    background-image: url('confetti.gif');
+}
+.container {
+    width:90%;
+    margin:0 auto;
+}
+.rightMenu{
+    display:inline-block;
+    width:20%;
+    vertical-align: top;
+}
+.cards{
+    width:70%;
+    margin: 0 auto;
+    display:inline-block;
+}
+.cardEasy{
+    width: 35%;
+    height: 260px;
+    background-color: black;
+    border-radius: 5px;
+    display:inline-block;
+    margin: 10px 0 0 10px;
+    transition: ease-in 1s;
+}
+.cardMedium{
+    width: 18%;
+    height: 180px;
+    background-color: black;
+    border-radius: 5px;
+    display:inline-block;
+    margin: 10px 0 0 10px;
+    transition: ease-in 1s;
+}
+.cardDifficult{
+    width: 16%;
+    height: 100px;
+    background-color: black;
+    border-radius: 5px;
+    display:inline-block;
+    margin: 10px 0 0 10px;
+    transition: ease-in 1s;
+}
+.isClose{
+    background-color: black;
+}
+
+.rotate{
+    transition: all ease-in 1s;
+    transform:rotateY(180deg);
+}
+.btn{
+    width: 80%;
+    border-radius: 5px;
+    height:2rem;
+    background-color: tomato;
+    color:white;
+    border:0;
+    cursor:pointer;
+    margin:10px 0 0 15px;
+    text-align: center;
+}
+#header_menu{
+    text-align: center;
+}
+#score{
+    text-align: center;
+    font-size: 3em;
+    border:1px solid #f7f7f7;
+    height:50px;
+    width: 60%;
+    margin:0 auto;
+}
+#highScoreHead{
+    text-align: center;
+    margin-top :20px;
+}
+#highScore{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
