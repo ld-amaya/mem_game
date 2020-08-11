@@ -139,11 +139,7 @@ function cardCompare(){
 }
 
 function gameDone(){
-    const container = document.querySelector('.container');
-    let confetti = document.createElement('img');
-    confetti.setAttribute('src','confetti.gif')
-    confetti.classList.add('endGame');
-    container.append(confetti);
+    body.classList.add('myBody');
     cardCounter = 0;
     let iScore = localStorage.getItem('highScore')
     if (iScore < totalScore) {
