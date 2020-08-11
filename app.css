@@ -1,9 +1,12 @@
 h2{
     text-align: center;
 }
-.myBody{
-    background-image: url('confetti.gif');
+
+.endGame{
+    position: absolute;
+    z-index: 0;
 }
+
 .container {
     width:90%;
     margin:0 auto;

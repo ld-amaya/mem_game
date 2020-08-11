@@ -20,17 +20,17 @@ let numCards = 10;
 setGame();
 title.innerText = 'Memory Game - Medium Level';
 easyGame.addEventListener('click',(e)=> {
-    numCards =4;
+    numCards =10;
     setGame();
     title.innerText = 'Memory Game - Easy Level';
 })
 mediumGame.addEventListener('click',(e)=> {
-    numCards = 10;
+    numCards = 20;
     setGame();
     title.innerText = 'Memory Game - Medium Level';
 })
 difficultGame.addEventListener('click',(e)=> {
-    numCards =20;
+    numCards =40;
     setGame();
     title.innerText = 'Memory Game - Difficult Level';
 })
@@ -139,7 +139,11 @@ function cardCompare(){
 }
 
 function gameDone(){
-    body.classList.add('myBody');
+    const container = document.querySelector('.container');
+    let confetti = document.createElement('img');
+    confetti.setAttribute('src','confetti.gif')
+    confetti.classList.add('endGame');
+    container.append(confetti);
     cardCounter = 0;
     let iScore = localStorage.getItem('highScore')
     if (iScore < totalScore) {
